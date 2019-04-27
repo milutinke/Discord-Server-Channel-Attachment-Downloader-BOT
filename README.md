@@ -68,7 +68,7 @@ Wait until the program displays: "DONE!"
 
 Now, type the following into the terminal:
 ```
-nom run download
+npm run download
 ```
 
 That is it, the program will now download all files to the directory/folder which you have specified in the configs.
