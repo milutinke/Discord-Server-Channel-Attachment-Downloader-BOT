@@ -1,15 +1,15 @@
 {
-  "name": "Srboje",
-  "version": "1.0.0",
-  "description": "",
+  "name": "Discord Server Channel Attachment Downloader Bot",
+  "version": "1.0.5",
+  "description": "Lets you to download attachments from the discord server channel.",
   "main": "app.js",
   "scripts": {
     "fetch": "node app.js",
     "download": "node download.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Dusan Milutinovic",
+  "license": "GNU",
   "dependencies": {
     "axios": "^0.18.0",
     "colors": "^1.3.3",
