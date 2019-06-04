@@ -72,7 +72,7 @@ npm run download
 ```
 
 That is it, the program will now download all files to the directory/folder which you have specified in the configs.
-If you have any questions, be free to contact me via mail: [milutinke@gmx.com](mailto:milutinke@gmx.com) :)
+If you have any questions, feel free to contact me via mail: [milutinke@gmx.com](mailto:milutinke@gmx.com) :)
 
 ## For other developers:
 You are free to change the code, if you want you can improve it, I am too lazy to do it.
