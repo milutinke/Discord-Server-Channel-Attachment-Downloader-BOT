@@ -8,6 +8,8 @@ const fs = require('fs');
 let loadedPictures = [];
 let addPicture = url => loadedPictures.push(url);
 
+console.log('Loading the list of images ...'.yellow);
+
 const downloadFile = async url => {
     const urlParts = url.split('/');
     let path = Path.resolve(__dirname, config.folder);
@@ -62,6 +64,12 @@ const downloadFromList = async () => {
     }
 };
 
-lineReader.eachLine(config.file, (line, last) => addPicture(line));
+lineReader.eachLine(config.file, (line, last) => {
+	addPicture(line);
 
-setTimeout(downloadFromList, 15000);
+	// If we finished with the reading of the file, let us download the images (3 s delay)
+	if(last) {
+        console.log(`Succesfully loaded ${loadedPictures.length} images!`.green);
+        setTimeout(downloadFromList, 1000);
+    }
+});
